@@ -26,7 +26,7 @@ function Myproduct() {
                                 <p>{d.description}</p>
                                 <p>{d.warrantyInformation}</p>
                                 <h5>{d.returnPolicy}</h5>
-                                <img src={d.images[0]}width="10%" height= "200"/>
+                                <img src={d.images[0]} alt="2"width="10%" height= "200"/>
                             </div>
                         </div>
                     )

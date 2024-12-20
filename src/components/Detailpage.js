@@ -6,14 +6,14 @@ function Detailspage() {
     const {id} =useParams();
 
     const [product, myproductlist] = useState({});
-    const myapi = () => {
+    const apicall = () => {
         axios.get(`https://api.escuelajs.co/api/v1/products/${id}`).then((d) => {
             console.log(d.data);
             myproductlist(d.data)
         })
     }
-    useEffect(() => {
-        myapi();
+   useEffect(() => {
+        apicall();
     }, []);
 
 

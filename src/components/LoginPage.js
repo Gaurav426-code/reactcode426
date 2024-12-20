@@ -56,7 +56,7 @@ const Button = styled.button`
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [ setError] = useState('');
+  const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const validateForm = () => {
@@ -99,6 +99,7 @@ const LoginPage = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
+        {error && <p>{error}</p>}
       <Button onClick={handleLogin}>Sign In</Button>
       <p>
         Don't have an account? <a href="/register">Register here</a>
