@@ -13,6 +13,13 @@ const LoginContainer = styled.div`
   font-family: "Arial", sans-serif;
 `;
 
+const Logo = styled.img`
+  width: 70px;
+  margin-bottom: 20px;
+  height:70px;
+  border-radius:100px;
+`;
+
 const AIMessage = styled.div`
   background: rgba(255, 255, 255, 0.1);
   padding: 15px;
@@ -86,6 +93,7 @@ const LoginPage = () => {
 
   return (
     <LoginContainer>
+      <Logo src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSimrMUId692F8ytceMnSgzuxqc2GUIAmLxVw&s" alt="Logo" />
       <AIMessage>Welcome! Let AI power your shopping experience.</AIMessage>
       <Input
         type="email"
